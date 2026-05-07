@@ -8,13 +8,19 @@ cask "adi2-remote" do
   desc "RME ADI2 remote control application"
   homepage "https://rme-audio.de/"
 
-  pkg "ADI2Remote_21.pkg"
+  depends_on :macos
 
-  uninstall pkgutil: "de.rme-audio.ADI-2-Remote"
+  pkg "ADI2Remote_#{version.no_dots}.pkg"
+
+  uninstall quit:    [
+              "de.rme-audio.ADI-2-Remote"
+            ],
+            pkgutil: "de.rme-audio.ADI-2-Remote"
 
   zap trash: [
     "~/Library/Application Support/adi2Remote",
     "~/Library/Preferences/de.rme-audio.ADI-2-Remote.plist",
     "~/Library/Logs/TotalMixFX",
+    "~/Library/Caches/com.apple.helpd/Generated/de.rme-audio.adi2remote.help*"
   ]
 end

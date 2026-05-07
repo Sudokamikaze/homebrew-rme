@@ -8,9 +8,14 @@ cask "totalmix-fx" do
   desc "RME audio mixer for RME audio interfaces"
   homepage "https://rme-audio.de/"
 
-  pkg "TMInstaller_201.pkg"
+  depends_on :macos
 
-  uninstall pkgutil: "de.rme-audio.TotalmixFX"
+  pkg "TMInstaller_#{version.no_dots}.pkg"
+
+  uninstall quit:    [
+              "de.rme-audio.TotalmixFX"
+            ],
+            pkgutil: "de.rme-audio.TotalmixFX"
 
   zap trash: [
     "~/Library/Application Support/RME TotalMix FX"
