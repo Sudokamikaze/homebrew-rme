@@ -1,4 +1,4 @@
-cask "rme-adi2-remote" do
+cask "adi2-remote" do
   version "2.1"
 
   url "https://www.rme-audio.de/downloads/adi2remote_mac.zip"
@@ -17,4 +17,4 @@ cask "rme-adi2-remote" do
     "~/Library/Preferences/de.rme-audio.ADI-2-Remote.plist",
     "~/Library/Logs/TotalMixFX",
   ]
-endAn
+end

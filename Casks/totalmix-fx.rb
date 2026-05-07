@@ -1,4 +1,4 @@
-cask "rme-totalmix-fx" do
+cask "totalmix-fx" do
   version "2.01"
 
   url "https://rme-audio.de/downloads/tmfx_201_1991_mac.zip"
@@ -8,11 +8,11 @@ cask "rme-totalmix-fx" do
   desc "RME audio mixer for RME audio interfaces"
   homepage "https://rme-audio.de/"
 
-  pkg "tmfx_201_1991_mac/TMInstaller_201.pkg"
+  pkg "TMInstaller_201.pkg"
 
   uninstall pkgutil: "de.rme-audio.TotalmixFX"
 
   zap trash: [
     "~/Library/Application Support/RME TotalMix FX"
   ]
-endAn
+end
