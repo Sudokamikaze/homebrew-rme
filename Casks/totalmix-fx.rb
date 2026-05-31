@@ -1,8 +1,8 @@
 cask "totalmix-fx" do
-  version "2.01"
+  version "2.03"
 
-  url "https://rme-audio.de/downloads/tmfx_201_1991_mac.zip"
-  sha256 "04f191ad3a307c57ca92a49157533ff165a352396aed34d2ffcaaab5dbc51065"
+  url "https://rme-audio.de/downloads/tmfx_#{version.no_dots}_1991_mac.zip"
+  sha256 "c1a790ab902f76afd85bd37fa63ae0bdd86bb6554100c696ac0a401edd926dc1"
 
   name "RME TotalMix FX"
   desc "RME audio mixer for RME audio interfaces"
