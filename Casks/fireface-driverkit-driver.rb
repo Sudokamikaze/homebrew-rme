@@ -1,8 +1,8 @@
 cask "fireface-driverkit-driver" do
-  version "4.27"
+  version "4.30"
 
   url "https://rme-audio.de/downloads/driver_usbdk_mac_#{version.no_dots}.zip"
-  sha256 "bb5c6cbafc4d974da5fc4b7ccfdf92a23d3c60ab644f0f046980dc305390d787"
+  sha256 "90b9e2dee606cf208683e034998112da5cfca5430b4f558f6ed6076c4ef52dca"
 
   name "RME FireFace DriverKit Driver"
   desc "RME DriverKit based driver for Babyface Pro, Babyface Pro FS, Digiface AES, Digiface AVB, Digiface Dante, Digiface Ravenna, Digiface USB, Fireface 802 FS, Fireface 802 FS AE, Fireface UCX II, Fireface UFX II, Fireface UFX III, Fireface UFX+, MADIface Pro, MADIface USB, MADIface XT, MADIface XT II, USB.IO"
